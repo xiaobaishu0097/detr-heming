@@ -165,7 +165,7 @@ def build(image_set, args):
     return dataset
 
 
-def build_AI2Thor_dataset(image_set, args):
+def build_AI2THOR_dataset(image_set, args):
     root = Path(args.coco_path)
     assert root.exists(), f'provided AI2Thor path {root} does not exist'
     mode = 'instances'
