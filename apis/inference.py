@@ -17,7 +17,7 @@ def init_detector(config, checkpoint=None, device='cuda:0', cfg_options=None):
 
 
 def inference_detector(model, images, preprocessors=None):
-    if isinstance(images, (list, tuple)):
+    if isinstance(images, (list, tuple, torch.Tensor)):
         is_batch = True
     else:
         images = [images]
